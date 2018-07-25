@@ -7,7 +7,7 @@ import {MoviesService} from '../../services/movies.service'
   styleUrls: ['./my-home-component.component.css']
 })
 export class MyHomeComponentComponent implements OnInit {
- movies: Array<object>=[];
+ movies :Array<object>=[];
   constructor( public moviesService:MoviesService ) { 
 
   this.movies=this.moviesService.getMovies()
