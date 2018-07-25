@@ -1,23 +1,32 @@
 <div class="container">
   
     <div class="row">
-    
-        <div class="col-2 movie" >
-          <h4>ROOM{{movie.id}}</h4>
-          <img src="{{movie.poster}}">
-          <p>Genres {{movie.genres}}</p>
-          <p>Year {{movie.year}}</p>
-          <p>Director {{movie.director}}</p>
-          <p>Actors {{movie.actors}}</p>
-          <p>Schedule {{movie.hours}}</p>
-          <p>Synopsis</p>
+    <div class="col align-self-center">
+        <h4>ROOM {{movie.id}} {{movie.title}}</h4>
+        <img src="{{movie.poster}}">
+        
+
+    </div>
+        <div class="col movie" >
+          <p><b>Genres</b> {{movie.genres}}</p>
+          <p><b>Year </b>{{movie.year}}</p>
+          <p><b>Director</b> {{movie.director}}</p>
+          <p><b>Actors</b> {{movie.actors}}</p>
+          <p><b>Schedule</b> {{movie.hours}}</p>
+          <p><b>Synopsis</b></p>
           <p>{{movie.synopsis}}</p>
-          <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
-         
+       
           
         </div>
+        
       </div>
-    
+
+      <div class="row"> 
+        <div class="col-12 align-self-center">
+          <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
+      </div>
+    </div>
+         
     
     
     </div>

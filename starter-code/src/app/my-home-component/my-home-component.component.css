@@ -4,8 +4,13 @@ img {
 }
 .movie{
 margin:10px;
+padding: 5px
+
 
 }
 .container{
+    justify-content:center
+}
+h4{
     text-align: center;
 }
